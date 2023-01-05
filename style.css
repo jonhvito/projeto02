@@ -31,6 +31,7 @@ body {
   /* EM VEZ DE USAR ISSO TUDO, USAR O ATALHO*/
   /*ATALHO*/
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 body * {
   font-family: "Inter", sans-serif;
@@ -138,4 +139,14 @@ footer {
   padding: 24px;
   text-align: center;
   text-decoration: solid;
+}
+
+/* media queries */
+@media (min-width: 700px) { 
+  :root {
+    --bg-url: url(./assetes/bg-desktop.jpg);
+  }
+  .light {
+    --bg-url: url(./assetes/bg-desktop-light.jpg);
+  }
 }
